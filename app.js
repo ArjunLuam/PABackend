@@ -40,11 +40,11 @@ app.post("/addratings", async (req, res) => {
         const newRating = new Rating({
             _id: mongoose.Types.ObjectId(),
             phone_no: req.body.phone_no,
-            shop_sanitization: req.body.san,
-            social_distancing: req.body.dist,
-            shop_name: req.body.shopName,
-            shop_address: req.body.shopAddress,
-            mask_use: req.body.mask,
+            shop_sanitization: req.body.shop_sanitization,
+            social_distancing: req.body.social_distancing,
+            shop_name: req.body.shop_name,
+            shop_address: req.body.shop_address,
+            mask_use: req.body.mask_use,
             recommended: req.body.recommended,
         });
         const data = await newRating.save();
