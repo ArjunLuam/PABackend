@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const ratingSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     phone_no: { type: Number },
-    san: { type: Number },
-    dist: { type: String },
-    shopName: { type: String },
-    shopAddress: { type: String },
-    mask: { type: Number },
+    shop_sanitization: { type: Number },
+    social_distancing: { type: String },
+    shop_name: { type: String },
+    shop_address: { type: String },
+    mask_use: { type: Number },
     recommended: { type: String },
 });
 
