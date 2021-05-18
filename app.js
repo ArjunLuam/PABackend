@@ -117,7 +117,8 @@ app.get("/reviewRestraunt", async (req, res) => {
       data: {
         avg_distancing,
         avg_mask,
-        avg_sanitization
+        avg_sanitization,
+        count
       }
     });
   } catch (err) {
